@@ -1,0 +1,23 @@
+<section>
+  <div class="input-group my-5">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Username"
+      aria-label="Username"
+      aria-describedby="basic-addon2"
+      [(ngModel)]="username"
+    />
+    <div class="input-group-append">
+      <button
+        [disabled]="getDisabled()"
+        class="btn btn-primary"
+        (click)="onSubmit()"
+        type="button"
+      >
+        Button
+      </button>
+    </div>
+  </div>
+  <p>{{ username }}</p>
+</section>
