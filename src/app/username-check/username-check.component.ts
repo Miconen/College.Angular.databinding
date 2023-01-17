@@ -9,8 +9,7 @@ export class UsernameCheckComponent {
   username = '';
 
   getDisabled() {
-    if (!this.username) return true;
-    return false;
+    return this.username ? false : true;
   }
 
   onSubmit() {
